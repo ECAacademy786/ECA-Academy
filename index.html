@@ -93,6 +93,7 @@
 
 <header>ECA Academy</header>
 
+
 <nav>
   <a href="#">Home</a>
   <a href="#courses">Courses</a>
@@ -105,27 +106,6 @@
   <p>Excellence in Cambridge & Edexcel Education</p>
   <button class="btn">Join Now</button>
 </div>
-
-<section id="courses">
-  <h2>Our Courses</h2>
-  <div class="courses">
-    <div class="card">
-      <h3>Pearson Edexcel IGCSE(Modular and Linear) </h3>
-      <p>Physics, Chemistry, Biology and Mathematics</p>
-    </div>
-    <div class="card">
-      <h3>IAL & A Level </h3>
-      <p>
-       Physics, Chemistry, Biology & Mathematics
-       Concept + exam-focused learning</p>
-    </div>
-    <div class="card">
-      <h3>Exam Preparation Crash course Classes</h3>
-      <p>Step-by-step problem solving</p>
-    </div>
-  </div>
-</section>
-
 <section id="about">
   <h2>About Us</h2>
   <p>🚀 ECA Academy – Your Shortcut to A Success*
@@ -158,6 +138,98 @@ Continuous motivation & guidance
 
 👉 Enroll now and start your journey to A results!*</p>
 </section>
+<section id="courses">
+  <h2>🚀 Our High-Impact Courses</h2>
+  <div class="courses">
+
+    <!-- IGCSE -->
+    <div class="card">
+      <h3>Pearson Edexcel IGCSE (Modular & Linear)</h3>
+      <p>Click a subject to view fee details:</p>
+
+      <ul>
+        <li onclick="toggleInfo('igcsePhysics')">Physics</li>
+        <li onclick="toggleInfo('igcseChemistry')">Chemistry</li>
+        <li onclick="toggleInfo('igcseBiology')">Biology</li>
+        <li onclick="toggleInfo('igcseMath')">Mathematics</li>
+      </ul>
+
+      <div id="igcsePhysics" class="info">1-1 Classes: 30,000 PKR<br>Group Classes: 12,000 PKR</div>
+      <div id="igcseChemistry" class="info">1-1 Classes: 30,000 PKR<br>Group Classes: 12,000 PKR</div>
+      <div id="igcseBiology" class="info">1-1 Classes: 30,000 PKR<br>Group Classes: 12,000 PKR</div>
+      <div id="igcseMath" class="info">1-1 Classes: 30,000 PKR<br>Group Classes: 12,000 PKR</div>
+    </div>
+
+    <!-- IAL -->
+    <div class="card">
+      <h3>IAL & A Level</h3>
+      <p>Click a subject to view fee details:</p>
+
+      <ul>
+        <li onclick="toggleInfo('ialPhysics')">Physics</li>
+        <li onclick="toggleInfo('ialChemistry')">Chemistry</li>
+        <li onclick="toggleInfo('ialBiology')">Biology</li>
+        <li onclick="toggleInfo('ialMath')">Mathematics</li>
+      </ul>
+
+      <div id="ialPhysics" class="info">1-1 Classes: 35,000 PKR<br>Group Classes: 18,000 PKR</div>
+      <div id="ialChemistry" class="info">1-1 Classes: 35,000 PKR<br>Group Classes: 18,000 PKR</div>
+      <div id="ialBiology" class="info">1-1 Classes: 35,000 PKR<br>Group Classes: 18,000 PKR</div>
+      <div id="ialMath" class="info">1-1 Classes: 35,000 PKR<br>Group Classes: 18,000 PKR</div>
+    </div>
+
+    <!-- Crash Course -->
+    <div class="card">
+      <h3>Exam Preparation Crash Courses</h3>
+      <p>Step-by-step problem solving with fast-track revision strategies.</p>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    cursor: pointer;
+    padding: 8px;
+    margin: 5px 0;
+    background: #f0f0f0;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+
+  ul li:hover {
+    background: #007BFF;
+    color: white;
+  }
+
+  .info {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: #e8f4ff;
+    border-left: 4px solid #007BFF;
+    border-radius: 5px;
+  }
+</style>
+
+<script>
+  function toggleInfo(id) {
+    let element = document.getElementById(id);
+    element.style.display = (element.style.display === "block") ? "none" : "block";
+  }
+</script>
+    <div class="card">
+      <h3>Exam Preparation Crash course Classes</h3>
+      <p>Step-by-step problem solving</p>
+    </div>
+  </div>
+</section>
+
 
 <section id="contact">
   <h2>Contact Us</h2>
